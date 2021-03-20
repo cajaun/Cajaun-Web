@@ -1,0 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+body{
+	background: #151B54;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+
+.profile-card{
+	width: 400px;
+	text-align: center;
+	border-radius: 8px;
+	overflow: hidden;
+}
+	
+.card-header{
+	background: #008080;
+	padding: 60px 40px;
+}
+	
+.pic{
+	display: inline-block;
+	background: linear-gradient(130deg, white,  #FFFF00);
+	padding: 8px;
+	margin: auto;
+	border-radius: 50%;
+	background-size: 200% 200%;
+	animation: animated-gradient 2s linear infinite;
+}
+	
+	@keyframes animated-gradient{
+		25%{
+			background-position: left bottom;
+		}
+		50%{
+			background-position: right bottom;
+		}
+		75%{
+			background-position: right top;
+		}
+		100%{
+			background-position: left top;
+		}
+	}
+	
+	.pic img{
+		display: block;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+	
+	.name{
+		color: #f2f2f2;
+		font-size: 28px;
+		font-weight: 600;
+		margin: 10px 0;
+	}
+	
+	.desc{
+		font-size: 18px;
+		color: #ffffff;
+	}
+	
+	.sm{
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	}
+	
+	.sm a{
+		color: #f2f2f2;
+		width: 56px;
+		font-size: 22px;
+		transition: .3s linear;
+	}
+	
+	.sm a:hover{
+		color: #000000;
+	}
+	
+	.contact-btn{
+		display: inline-block;
+		padding: 12px 50px;
+		color: #008080;
+		border: 2px solid #008080;
+		border-radius: 6px;
+		margin-top: 16px;
+		transition: .3s linear;
+	}
+	
+	.contact-btn:hover{
+		background: #000000;
+		color: #f2f2f2;
+	}
+	
+	.card-footer{
+		background: #ffffff;
+		padding: 60px 10px;
+	}
+	
+	
+	.border{
+		width: 1px;
+		height: 30px;
+		background: gray;
+	}
+
+/* Particle */
+.particles{
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: darken ;
+	font-size: 20px;
+	color: #566D7E;
+}
+
+
+#particles-js{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
